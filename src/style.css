@@ -1,0 +1,490 @@
+/* =======================
+   Global Styles
+======================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fceed1; /* Background Tan */
+  color: #2d545e; /* Night Blue */
+}
+
+a, button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* =======================
+   Navbar
+======================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(18,52,59,0.85); /* Night Blue Shadow overlay */
+  color: white;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7d3cff, #f2d53c); /* Purple-y + Yellow Gloves */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: #beef00; /* Bright Green */
+  transform: scale(1.05);
+}
+
+/* =======================
+   Hero Section
+======================= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #8076a3, #f9c5bd), url('/src/assets/hero-bg.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(124,103,127,0.6); /* Factory Stone Purple overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #e1b382; /* Sand Tan border */
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #7d3cff, #ff0028); /* Purple-y + Electric Red */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #f9c5bd; /* Misty Mountain Pink */
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #f2d53c, #c80e13); /* Yellow Gloves + Redhead */
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(200,14,19,0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #c80e13, #f2d53c);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(255,0,40,0.4); /* Electric Red glow */
+}
+
+/* =======================
+   About Section
+======================= */
+.about-section {
+  padding: 80px 20px;
+  background: #fceed1; /* Background Tan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(124,103,127,0.25); /* Factory Stone Purple Shadow */
+  overflow: hidden;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  min-width: 280px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 2 1 500px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d545e; /* Night Blue */
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #657a00; /* Deep Green */
+  margin-bottom: 15px;
+}
+
+/* =======================
+   Skills Section
+======================= */
+.skills-section {
+  padding: 80px 20px;
+  background: #f9c5bd; /* Misty Mountain Pink */
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #12343b; /* Night Blue Shadow */
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #beef00, #9bc400); /* Bright Green + Grassy Green */
+  color: white;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(155,196,0,0.3); 
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(190,239,0,0.5);
+}
+
+/* =======================
+   Projects Section
+======================= */
+.projects-section {
+  padding: 80px 20px;
+  background: #8076a3; /* Purple Mountains Majesty */
+  text-align: center;
+}
+
+.projects-container h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fceed1; /* Background Tan contrast */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  position: relative;
+  width: 280px;
+  height: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.75);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(225,179,130,0.9); /* Sand Tan overlay */
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-overlay p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #1400c6; /* Power Blue text */
+}
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contact container */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fdfdfd;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit button */
+.contact-form button {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+.contact-form button:active {
+  transform: scale(0.97);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 20px;
+    padding: 1.5rem;
+  }
+}
+
+
+/* =======================
+   Footer
+======================= */
+.footer {
+  background: #12343b; /* Night Blue Shadow */
+  color: white;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 4px solid #e1b382;
+}
+
+.footer-links a {
+  color: #e1b382; /* Sand Tan */
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #beef00; /* Bright Green */
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #beef00;
+}
+
+/* =======================
+   Animations
+======================= */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form button {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    margin: 0 10px;
+  }
+}
