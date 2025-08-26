@@ -52,19 +52,15 @@ export default function Footer() {
         </a>
 
         {/* Social icons */}
-        <a href="#" aria-label="Facebook" style={{ color: "#f2d53c" }}>
-          <FaFacebookF />
-        </a>
-        <a href="#" aria-label="Twitter" style={{ color: "#f2d53c" }}>
+      
+        <a href="https://x.com/SpiderStudioX?t=VkXe2bLpvIHNP-HsFbmbdQ&s=08" aria-label="Twitter" style={{ color: "#f2d53c" }}>
           <FaTwitter />
         </a>
-        <a href="#" aria-label="LinkedIn" style={{ color: "#f2d53c" }}>
-          <FaLinkedinIn />
-        </a>
-        <a href="#" aria-label="Instagram" style={{ color: "#f2d53c" }}>
+      
+        <a href="https://www.instagram.com/spide_rdev?igsh=MWN4dDFnNjNtN20wcg==" aria-label="Instagram" style={{ color: "#f2d53c" }}>
           <FaInstagram />
         </a>
-         <a href="#" aria-label="Instagram" style={{ color: "#f2d53c" }}>
+         <a href="https://www.instagram.com/spide_rdev?igsh=MWN4dDFnNjNtN20wcg==" aria-label="Instagram" style={{ color: "#f2d53c" }}>
           <FaInstagram />
         </a>
       </div>

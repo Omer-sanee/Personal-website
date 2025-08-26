@@ -7,7 +7,7 @@ export default function About() {
         {/* Profile Image */}
         <div className="about-image flex-shrink-0">
           <img
-            src="/src/assets/profile.jpg"
+            src="/public/profile.jpg"
             alt="Spider"
             className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover border-4 border-purple-500 hover:scale-105 transition-transform duration-300"
           />

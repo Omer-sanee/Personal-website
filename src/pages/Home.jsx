@@ -91,7 +91,7 @@ export default function Home() {
       <div className="hero-overlay">
         <div className="hero-content">
           <img
-            src="/src/assets/profile.jpg"
+            src="/public/profile.jpg"
             alt="Profile"
             className="profile-img animate-profile"
           />
