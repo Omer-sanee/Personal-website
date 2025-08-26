@@ -6,11 +6,12 @@ export default function About() {
       <div className="about-container max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Profile Image */}
         <div className="about-image flex-shrink-0">
-          <img
-            src="/public/profile.jpg"
-            alt="Spider"
-            className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover border-4 border-purple-500 hover:scale-105 transition-transform duration-300"
-          />
+         <img
+  src="/profile.jpg"
+  alt="Spider"
+  className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover border-4 border-purple-500 hover:scale-105 transition-transform duration-300"
+/>
+
         </div>
 
         {/* About Text */}

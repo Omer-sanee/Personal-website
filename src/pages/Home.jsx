@@ -90,11 +90,12 @@ export default function Home() {
       {/* Hero Content */}
       <div className="hero-overlay">
         <div className="hero-content">
-          <img
-            src="/public/profile.jpg"
-            alt="Profile"
-            className="profile-img animate-profile"
-          />
+       <img
+  src="/profile.jpg"
+  alt="Profile"
+  className="profile-img animate-profile"
+/>
+
           <h1 className="hero-text">{text}</h1>
           <p className="hero-subtext">
             Creating beautiful, functional web experiences.
